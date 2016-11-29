@@ -17,8 +17,7 @@ fi
 echo "############################"
 echo "#--Retrieving-processors---#"
 echo "############################"
-sudo cat /proc/cpuinfo | grep processor | wc -l >/dev/null
-# Code doesn't work yet.. Work in progress
+cat /proc/cpuinfo >/dev/null
 if [ $? = "0" ]; then
 	echo "$(sudo cat /proc/cpuinfo | grep processor | wc -l) processors"
 	echo "############################"
@@ -35,7 +34,6 @@ else
 	threads="1"
 	
 fi
-# End of non-working code
 if [ "$cm_device" = "" ]; then
 	echo "############################"
 	echo "#------Which-device?-------#"

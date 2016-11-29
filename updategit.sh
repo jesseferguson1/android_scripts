@@ -1,11 +1,12 @@
 #!/bin/sh
-echo "###################"
-echo "# Git update menu #"
-echo "###################"
-echo ""
-echo "1: device tree"
-echo "2: kernel source"
-echo "3: device tree + kernel source"
+echo "##################################"
+echo "#--------Git-update-menu---------#"
+echo "##################################"
+echo "#--------------------------------#"
+echo "#-1:-device-tree-----------------#"
+echo "#-2:-kernel-source---------------#"
+echo "#-3:-device-tree-+-kernel-source-#"
+echo "##################################"
 read choice
 if [ "$choice" = "1" ]; then
 	# Device tree
